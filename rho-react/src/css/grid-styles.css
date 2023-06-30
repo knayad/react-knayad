@@ -1,0 +1,20 @@
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "tools tools"
+    "item item item item"
+    "item item item item";
+}
+
+header {
+  grid-area: header;
+}
+
+.tools {
+  grid-area: tools;
+}
+
+.item {
+  grid-area: item;
+}
