@@ -14,7 +14,7 @@ function CollapsedAccordion() {
     <Accordion>
       <Accordion.Item eventKey="0">
         <Accordion.Header>
-          <Nav.Link href="#home">Programming</Nav.Link>
+          <Nav.Link href="#programming">Programming</Nav.Link>
         </Accordion.Header>
         <Accordion.Body>{ProgrammingInfo}</Accordion.Body>
       </Accordion.Item>

@@ -12,7 +12,7 @@ function ModalComponent() {
   return (
     <>
       <Button variant="primary" onClick={handleShow}>
-        Check out more!
+        Give me more options...
       </Button>
 
       <Modal
@@ -30,12 +30,16 @@ function ModalComponent() {
           <CollapsedAccordion />
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          {/* <Button variant="secondary" onClick={handleClose}>
             Close
+          </Button> */}
+          <Button variant="primary" onClick={handleClose}>
+            Just exploring!
           </Button>
-          <Button variant="primary">Just exploring</Button>
         </Modal.Footer>
       </Modal>
+      <br />
+      <br />
     </>
   );
 }
