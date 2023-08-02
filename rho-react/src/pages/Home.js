@@ -1,19 +1,22 @@
-// import { useState } from "react";
-// import ModalComponent from "../components/ModalComponent";
-// import RecentProjects from "../components/RecentProjects";
+import React from "react";
+import Container from "react-bootstrap/Container";
 
-// const Home = () => {
-//   const [projects, setProjects] = useState([]);
-//   return (
-//     <>
-//       {/* recent projects */}
-//       <br />
-//       <body>
-//         <RecentProjects projects={projects} />
-//       </body>
-//       <ModalComponent />
-//     </>
-//   );
-// };
+import MySpline from "../components/MySpline";
 
-// export default Home;
+const HomePage = () => {
+  return (
+    <>
+      <br />
+      <Container fluid id="programming">
+        <h1 className="welcome"> Welcome to my website</h1>
+        <br />
+        <MySpline />
+        <br />
+        <h4 className="welcome"> Can't find what you're looking for? </h4>
+      </Container>
+      <br />
+    </>
+  );
+};
+
+export default HomePage;

@@ -11,13 +11,13 @@ class NavbarComp extends Component {
   render() {
     return (
       <div>
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="none" expand="lg">
           <Container>
             <ResponsiveOffCanvas />
             <Container>
               <Navbar.Brand href="#home">BRAND placeholder</Navbar.Brand>
             </Container>
-            <Navbar.Brand href="#home">NADIA</Navbar.Brand>
+            <Navbar.Brand href="#about">NADIA</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">

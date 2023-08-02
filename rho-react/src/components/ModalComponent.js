@@ -23,7 +23,7 @@ function ModalComponent() {
         backdrop="static"
         keyboard={false}
       >
-        <Modal.Header closeButton>
+        <Modal.Header closeButton onClick={handleClose}>
           <Modal.Title>What brings you here today?</Modal.Title>
         </Modal.Header>
         <Modal.Body>

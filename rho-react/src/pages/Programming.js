@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import RecentProjects from "../components/MapRecentProjects";
 
-//import CardComponent from "../components/CardComponent";
+import SkillsComponent from "../components/SkillsComponent";
 
 const Programming = () => {
   return (
@@ -22,8 +22,7 @@ const Programming = () => {
         <Col />
         <Row id="populate">
           <Col>
-            <br />
-            languages and stuffs
+            <SkillsComponent />
           </Col>
           <Col>
             <br />
@@ -31,7 +30,6 @@ const Programming = () => {
           </Col>
         </Row>
       </Container>
-      );
       <br />
     </>
   );
