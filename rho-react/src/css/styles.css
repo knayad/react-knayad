@@ -1,3 +1,24 @@
 .welcome {
   font-family: "Bungee Spice", cursive;
 }
+
+.projects {
+  font-family: "Merriweather", serif;
+  flex-wrap: wrap;
+}
+
+.project-row {
+  font-size: x-large;
+}
+.project-row:nth-child(odd) {
+  background-color: blanchedalmond;
+}
+
+.project-row:nth-child(even) {
+  background-color: seashell;
+}
+
+.projects h2 {
+  background-color: rgb(190, 227, 215);
+  padding: 0.5em;
+}
