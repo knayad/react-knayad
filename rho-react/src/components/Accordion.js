@@ -38,7 +38,7 @@ function CollapsedAccordion() {
       </Accordion.Item>
       <Accordion.Item eventKey="4">
         <Accordion.Header>
-          <Nav.Link href="#home">Music</Nav.Link>
+          <Nav.Link href="about">About Me</Nav.Link>
         </Accordion.Header>
         <Accordion.Body>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

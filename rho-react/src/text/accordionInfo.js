@@ -1,19 +1,24 @@
 const ProgrammingInfo = (
   <p>
-    This is information about the different programming projects I have worked
-    on. My resume for programming should be located somewhere on that page too.
+    Check out the different programming projects I have done!
     <br />
     <ul>
       <li>
         {" "}
         <a href="https://knayad.github.io/nadia.github.io/">
           {" "}
-          My website{" "}
+          My first vanilla website
         </a>{" "}
+        <p>javascript, html, css [raw]</p>
       </li>
       <li>
         {" "}
-        <a href="#programming"> Alt site</a>{" "}
+        <a href="home"> The website you're on</a>{" "}
+        <p>React.js, html, css and javascript</p>
+      </li>
+      <li>
+        {" "}
+        <a href="recent"> Recent projects</a>{" "}
       </li>
     </ul>
   </p>

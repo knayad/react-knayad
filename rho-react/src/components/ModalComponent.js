@@ -3,6 +3,8 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import CollapsedAccordion from "./Accordion";
 
+import "../css/styles.css";
+
 function ModalComponent() {
   const [show, setShow] = useState(true);
 
@@ -11,6 +13,8 @@ function ModalComponent() {
 
   return (
     <>
+      <h4 className="welcome"> Can't find what you're looking for? </h4>
+      <br />
       <Button variant="primary" onClick={handleShow}>
         Give me more options...
       </Button>
