@@ -8,19 +8,6 @@ const About = () => {
       <br />
       <h1 className="welcome"> My name is Nadia</h1>
       <p>
-        {" "}
-        Gawd... I hate talking about myself. Basically, you need to know two
-        things:
-        <ol>
-          <li> I'm like a cat on it's fifth life</li>
-          <li>
-            {" "}
-            I'm a nerd so, I worked in different industries to keep learning.
-          </li>
-        </ol>
-        <br /> That's why I fell into software development.{" "}
-      </p>
-      <p>
         After learning full stack web development through MIT, I have been
         focusing on front-end design. I also have been dabbling in data science.
         <br />

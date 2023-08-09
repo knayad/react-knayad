@@ -7,14 +7,14 @@ const ProgrammingInfo = (
         {" "}
         <a href="https://knayad.github.io/nadia.github.io/">
           {" "}
-          My first vanilla website
+          My first (vanilla) website
         </a>{" "}
         <p>javascript, html, css [raw]</p>
       </li>
       <li>
         {" "}
         <a href="home"> The website you're on</a>{" "}
-        <p>React.js, html, css and javascript</p>
+        <p>react.js, html, css and javascript</p>
       </li>
       <li>
         {" "}
