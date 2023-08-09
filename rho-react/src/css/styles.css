@@ -12,13 +12,21 @@
 }
 .project-row:nth-child(odd) {
   background-color: blanchedalmond;
+  opacity: 0.75;
+  text-align: center;
+  word-wrap: break-word;
+  padding: 1em;
 }
 
 .project-row:nth-child(even) {
   background-color: seashell;
+  text-align: center;
+  word-wrap: break-word;
+  padding: 1em;
 }
 
 .projects h2 {
   background-color: rgb(190, 227, 215);
-  padding: 0.5em;
+  padding: 1em;
+  opacity: 0.85;
 }

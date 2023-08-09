@@ -16,9 +16,6 @@ export default function RecentProjects() {
     <Container className="projects">
       <Row>
         <h2>This page uses GitHub's API to pull my repositories. </h2>{" "}
-        <p>
-          Links will be take you directly to the respective project repository.
-        </p>
       </Row>
       <br />
       <br />
@@ -40,7 +37,7 @@ export default function RecentProjects() {
         </Col>
         <Col>
           <h3>
-            <b>HTML URL</b>
+            <b>Link</b>
           </h3>
         </Col>
       </Row>
