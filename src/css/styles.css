@@ -34,3 +34,8 @@
 .about {
   text-align: left;
 }
+
+.reviews {
+  align-items: center;
+  text-align: justify;
+}

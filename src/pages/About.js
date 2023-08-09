@@ -1,5 +1,6 @@
 import Container from "react-bootstrap/Container";
-import "../assets/images/svg/bright-yellowstar-svgrepo-com.svg";
+import Star from "../assets/images/svg/bright-yellowstar-svgrepo-com.svg";
+import { Col, Row } from "react-bootstrap";
 
 const About = () => {
   return (
@@ -11,9 +12,9 @@ const About = () => {
       <Container className="about">
         <p>
           {" "}
-          As I said, I dislike talking about myself. It's not in a humble way, I
-          just can't be bothered to make sense of my own life. Instead, here's a
-          list of some of my interests.
+          As I said, I dislike talking about myself. Mostly because I just can't
+          be bothered to make sense of my own life. Instead, here's a list of
+          some of my interests.
         </p>
 
         <ul>
@@ -32,28 +33,64 @@ const About = () => {
           </li>
           <li>
             <b>Gardening: </b>
-            for the days I want to be one with nature and a hike seems like too
-            much of an up-front commitment.{" "}
+            The days I want to be one with nature and a hike seems like too much
+            of an up-front commitment.{" "}
           </li>
           <li>
             <b>Hiking: </b>
-            for the days I feel like over committing.
+            The days I feel like over committing.
           </li>
           <li>
             <b>Coding: </b>
-            for the days being human is too hard and I feel like hating myself a
-            little bit.
+            If being human is too hard and I feel like hating myself a little
+            bit.
           </li>
         </ul>
       </Container>
       <br />
-      <Container className="reviews">
-        <h2>Reviews</h2>
-        <p>from the people who would rate me.</p>
-        <img
-          src="../assets/images/svg/bright-yellowstar-svgrepo-com.svg"
-          alt="star"
-        />
+      <Container>
+        <h1>Reviews</h1>
+        <img src={Star} alt="star" style={{ height: 55, width: 55 }} />
+        <img src={Star} alt="star" style={{ height: 55, width: 55 }} />
+        <img src={Star} alt="star" style={{ height: 55, width: 55 }} />
+        <img src={Star} alt="star" style={{ height: 55, width: 55 }} />
+        <img src={Star} alt="star" style={{ height: 55, width: 55 }} />
+        <p>*Max is 5 stars.</p>
+        <Container className="reviews">
+          <Col>
+            <Row>
+              <img src={Star} alt="star" style={{ height: 55, width: 55 }} />
+              <img src={Star} alt="star" style={{ height: 55, width: 55 }} />
+              <img src={Star} alt="star" style={{ height: 55, width: 55 }} />
+              <img src={Star} alt="star" style={{ height: 55, width: 55 }} />
+              <img src={Star} alt="star" style={{ height: 55, width: 55 }} />
+              <h2>Would befriend again.</h2>
+            </Row>
+            <Row>
+              <p>
+                "[Nadia] is earnest, curious, and works hard. She's smart as
+                hell, but more importantly, she knows bullshit when she sees it.
+                She's sweet and excitable and fiercely loyal and loves animals.
+                She makes banger coffee. The one thing I'd say is a matter of
+                taste that you might not like about her is that she's loud and
+                it's very clear she's from the northeast. Personally, that's
+                something that drew me to her."{" "}
+              </p>
+            </Row>
+          </Col>
+          <Col>
+            <Row>
+              <img src={Star} alt="star" style={{ height: 55, width: 55 }} />
+              <img src={Star} alt="star" style={{ height: 55, width: 55 }} />
+              <img src={Star} alt="star" style={{ height: 55, width: 55 }} />
+              <img src={Star} alt="star" style={{ height: 55, width: 55 }} />
+              <h2>Hard to get ahold of.</h2>
+            </Row>
+            <Row>
+              <p>Otherwise she might have gotten 7/5 stars. </p>
+            </Row>
+          </Col>
+        </Container>
       </Container>
       <br />
     </Container>
