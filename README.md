@@ -1,2 +1,2 @@
-# rho-react-github-io
- redo raw github page to use react.js
+# react-github-io
+create new github page to include react.js
