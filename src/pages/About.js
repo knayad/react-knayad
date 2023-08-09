@@ -1,6 +1,5 @@
 import Container from "react-bootstrap/Container";
 import "../assets/images/svg/bright-yellowstar-svgrepo-com.svg";
-import "../assets/images/svg/star-svgrepo-com.svg";
 
 const About = () => {
   return (
@@ -14,7 +13,7 @@ const About = () => {
           {" "}
           As I said, I dislike talking about myself. It's not in a humble way, I
           just can't be bothered to make sense of my own life. Instead, here's a
-          list of some of my interests for you.
+          list of some of my interests.
         </p>
 
         <ul>
