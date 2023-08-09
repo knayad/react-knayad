@@ -1,24 +1,61 @@
 import Container from "react-bootstrap/Container";
+import "../assets/images/svg/bright-yellowstar-svgrepo-com.svg";
+import "../assets/images/svg/star-svgrepo-com.svg";
 
 const About = () => {
   return (
     <Container>
       <br />
-      <h1 className="about"> About Me</h1>
-      <br />
       <h1 className="welcome"> My name is Nadia</h1>
-      <p>
-        After learning full stack web development through MIT, I have been
-        focusing on front-end design. I also have been dabbling in data science.
-        <br />
-        I think I'm on life three or four. What do you think?
-        <br />
-        These days I prefer a quieter energy. I like rock climbing, gardening,
-        and coding. Basically, after years in front of people, I like to do
-        things where I can interact "at will" rather than as the driving source
-        of my bread and butter.
-      </p>
-      ;
+      <br />
+      <h1> About Me</h1>
+      <Container className="about">
+        <p>
+          {" "}
+          As I said, I dislike talking about myself. It's not in a humble way, I
+          just can't be bothered to make sense of my own life. Instead, here's a
+          list of some of my interests for you.
+        </p>
+
+        <ul>
+          <li>
+            <b>Coffee:</b> I love it so much I worked in industry for almost a
+            decade.{" "}
+          </li>
+          <li>
+            <b>Anime: </b>
+            After a love lost from being a mega-nerd in middle school, I almost
+            exclusively watch Crunchyroll now.{" "}
+          </li>
+          <li>
+            <b>Rock climbing: </b>I am scared of heights, so before I injured my
+            shoulder, I got pretty good because I just didn't want to fall.
+          </li>
+          <li>
+            <b>Gardening: </b>
+            for the days I want to be one with nature and a hike seems like too
+            much of an up-front commitment.{" "}
+          </li>
+          <li>
+            <b>Hiking: </b>
+            for the days I feel like over committing.
+          </li>
+          <li>
+            <b>Coding: </b>
+            for the days being human is too hard and I feel like hating myself a
+            little bit.
+          </li>
+        </ul>
+      </Container>
+      <br />
+      <Container className="reviews">
+        <h2>Reviews</h2>
+        <p>from the people who would rate me.</p>
+        <img
+          src="../assets/images/svg/bright-yellowstar-svgrepo-com.svg"
+          alt="star"
+        />
+      </Container>
       <br />
     </Container>
   );

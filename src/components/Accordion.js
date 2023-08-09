@@ -41,13 +41,27 @@ function CollapsedAccordion() {
           <Nav.Link href="about">About Me</Nav.Link>
         </Accordion.Header>
         <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          <p>
+            {" "}
+            Barffff... I hate talking about myself.
+            <br />
+            <br />
+            Basically, you need to know two things:
+            <ol>
+              <li> I'm like a cat on it's fifth life.</li>
+              <li>
+                I'm a nerd so I worked in different industries to keep learning.
+              </li>
+            </ol>
+            That's why I became interested in software development. You just
+            keep learning.
+          </p>
+          <p>
+            <b>
+              *tsundre voice* <br />
+            </b>
+            If you must know more, <a href="about"> click here.</a>
+          </p>
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
