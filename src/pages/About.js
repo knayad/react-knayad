@@ -1,98 +1,105 @@
 import Container from "react-bootstrap/Container";
-import Star from "../assets/images/svg/bright-yellowstar-svgrepo-com.svg";
-import { Col, Row } from "react-bootstrap";
+import { Button } from "react-bootstrap";
+
+import { useEffect, useState } from "react";
 
 const About = () => {
+  const [joke, setJoke] = useState(false);
+
+  useEffect(() => {
+    function simulateNetworkRequest() {
+      return new Promise((resolve) => setTimeout(resolve, 6500));
+    }
+
+    if (joke) {
+      simulateNetworkRequest().then(() => {
+        setJoke(false);
+      });
+    }
+  }, [joke]);
+
+  const handleClick = () => setJoke(true);
+
   return (
     <Container>
-      <br />
+      {/* <br />
       <h1 className="welcome"> My name is Nadia</h1>
-      <br />
+      <br /> */}
       <h1> About Me</h1>
       <Container className="about">
-        <p>
-          {" "}
-          As I said, I dislike talking about myself. Mostly because I just can't
-          be bothered to make sense of my own life. Instead, here's a list of
-          some of my interests.
-        </p>
+        <p> Here's a list of some of my interests!</p>
 
         <ul>
           <li>
-            <b>Coffee:</b> I love it so much I worked in industry for almost a
-            decade.{" "}
+            <b>Coffee:</b>{" "}
+            <p>
+              I better know how to make a decent cup of coffee. I worked in
+              -industry for almost a decade.{" "}
+            </p>
+          </li>
+          <li>
+            <b>Reading:</b>{" "}
+            <p>
+              {" "}
+              I'm especially drawn books by (credible) doctors who explore the
+              biology and psychology of people.{" "}
+            </p>
+          </li>
+          <li>
+            <b>Traveling:</b>{" "}
+            <p>
+              A decent hostel with wifi and I am good to go! A hotel works too,
+              if you read that incorrectly.{" "}
+            </p>
           </li>
           <li>
             <b>Anime: </b>
-            After a love lost from being a mega-nerd in middle school, I almost
-            exclusively watch Crunchyroll now.{" "}
+            <p>I'm no otaku, but I do know enough to know what that means.</p>
           </li>
           <li>
-            <b>Rock climbing: </b>I am scared of heights, so before I injured my
-            shoulder, I got pretty good because I just didn't want to fall.
+            <b>Concerts: </b>
+            <p> Seedy bars with rising talent is my jam. </p>
+          </li>
+          <li>
+            <b>Skincare: </b> <p> I try, most days. </p>
+          </li>
+          <li>
+            <b>Rock climbing: </b>{" "}
+            <p>
+              I'm decent because I'm terrified of heights and don't want to
+              fall.
+            </p>
           </li>
           <li>
             <b>Gardening: </b>
-            The days I want to be one with nature and a hike seems like too much
-            of an up-front commitment.{" "}
+            <p>It's really just an excuse to play in the dirt. </p>
+          </li>
+          <li>
+            <b>Animals: </b>
+            <p>My cat and bird can do tricks. What can your pet do? </p>
           </li>
           <li>
             <b>Hiking: </b>
-            The days I feel like over committing.
+            <p>Especially with friends!</p>
           </li>
           <li>
             <b>Coding: </b>
-            If being human is too hard and I feel like hating myself a little
-            bit.
+            <p>Q: What do cats and programmers have in common?</p>
+            <p>
+              A:{" "}
+              <Button
+                variant="primary"
+                disabled={joke}
+                onClick={!joke ? handleClick : null}
+              >
+                {joke
+                  ? "When either one is unusually happy and excited, it is because they found a bug."
+                  : "Click to see the answer"}
+              </Button>
+            </p>
           </li>
         </ul>
       </Container>
-      <br />
-      <Container>
-        <h1>Reviews</h1>
-        <img src={Star} alt="star" style={{ height: 55, width: 55 }} />
-        <img src={Star} alt="star" style={{ height: 55, width: 55 }} />
-        <img src={Star} alt="star" style={{ height: 55, width: 55 }} />
-        <img src={Star} alt="star" style={{ height: 55, width: 55 }} />
-        <img src={Star} alt="star" style={{ height: 55, width: 55 }} />
-        <p>*Max is 5 stars.</p>
-        <Container className="reviews">
-          <Col>
-            <Row>
-              <img src={Star} alt="star" style={{ height: 55, width: 55 }} />
-              <img src={Star} alt="star" style={{ height: 55, width: 55 }} />
-              <img src={Star} alt="star" style={{ height: 55, width: 55 }} />
-              <img src={Star} alt="star" style={{ height: 55, width: 55 }} />
-              <img src={Star} alt="star" style={{ height: 55, width: 55 }} />
-              <h2>Would befriend again.</h2>
-            </Row>
-            <Row>
-              <p>
-                "[Nadia] is earnest, curious, and works hard. She's smart as
-                hell, but more importantly, she knows bullshit when she sees it.
-                She's sweet and excitable and fiercely loyal and loves animals.
-                She makes banger coffee. The one thing I'd say is a matter of
-                taste that you might not like about her is that she's loud and
-                it's very clear she's from the northeast. Personally, that's
-                something that drew me to her."{" "}
-              </p>
-            </Row>
-          </Col>
-          <Col>
-            <Row>
-              <img src={Star} alt="star" style={{ height: 55, width: 55 }} />
-              <img src={Star} alt="star" style={{ height: 55, width: 55 }} />
-              <img src={Star} alt="star" style={{ height: 55, width: 55 }} />
-              <img src={Star} alt="star" style={{ height: 55, width: 55 }} />
-              <h2>Hard to get ahold of.</h2>
-            </Row>
-            <Row>
-              <p>Otherwise she might have gotten 7/5 stars. </p>
-            </Row>
-          </Col>
-        </Container>
-      </Container>
-      <br />
     </Container>
   );
 };

@@ -1,0 +1,22 @@
+{
+  "reviews": [
+    {
+      "title": "Would befriend again.",
+      "body": "[Nadia] is earnest, curious, and works hard. She's smart as hell, but more importantly, she knows bullshit when she sees it. She's sweet and excitable and fiercely loyal and loves animals. She makes banger coffee. The one thing I'd say is a matter of taste that you might not like about her is that she's loud and it's very clear she's from the northeast. Personally, that's something that drew me to her.",
+      "author": "J-bo",
+      "id": 1
+    },
+    {
+      "title": "Hard to get ahold of.",
+      "body": "Otherwise she might have gotten 7/5 stars.",
+      "author": "Ryan",
+      "id": 2
+    },
+    {
+      "title": "Five stars.",
+      "body": "Excellent skin, fun to be around. Adventurous in many ways. Weirdly calls herself brown, but she's clearly not brown lol. She is a person of color though.",
+      "author": "Corey",
+      "id": 3
+    }
+  ]
+}

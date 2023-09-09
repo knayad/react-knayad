@@ -6,13 +6,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //components
 import NavbarComp from "./components/NavbarComp";
-import ModalComponent from "./components/ModalComponent";
+// import ModalComponent from "./components/ModalComponent";
 // import MySpline from "./components/MySpline";
 
 //pages
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
+import Reviews from "./pages/Reviews";
 
 function App() {
   return (
@@ -22,15 +23,16 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/recent" element={<Projects />} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="/about" element={<About />} />
+          <Route path="/reviews" element={<Reviews />} />
           {/* 
           <body>
             <br />
           </body> */}
         </Routes>
       </BrowserRouter>
-      <ModalComponent />
+      {/* <ModalComponent /> */}
     </div>
   );
 }

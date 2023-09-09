@@ -5,9 +5,14 @@ const ProgrammingInfo = (
     <ul>
       <li>
         {" "}
+        <a href="recent"> Recent projects</a>{" "}
+        <p>utilizes Github's API to pull repositories</p>
+      </li>
+      <li>
+        {" "}
         <a href="https://knayad.github.io/nadia.github.io/">
           {" "}
-          My first (vanilla) website
+          My first (vanilla) website - NOT UPDATED
         </a>{" "}
         <p>javascript, html, css [raw]</p>
       </li>
@@ -16,33 +21,52 @@ const ProgrammingInfo = (
         <a href="home"> The website you're on</a>{" "}
         <p>react.js, html, css and javascript</p>
       </li>
-      <li>
-        {" "}
-        <a href="recent"> Recent projects</a>{" "}
-      </li>
     </ul>
   </p>
 );
 
-const ArtInfo = (
-  <p> "This is information about visual images of my most recent work."</p>
-);
-
-const PodcastInfo = (
+const Content = (
   <p>
     <ul>
-      <li>"Catch 22"</li>
+      <li> SheDev </li>
+      <p>YouTube series for to-be developers.</p>
+      <li>Catch 22</li>
+      <p>
+        A (comical) dialogue about shitty things that usually come with a catch.
+        <a href="https://open.spotify.com/show/6riGUEJhRunKWVWlKeSZTm?si=8f0cb8934a1f4829">
+          <p>Find it on Spotify.</p>
+        </a>
+      </p>
     </ul>
   </p>
 );
 
-const Blog = (
-  <p>
+const About = (
+  <>
+    <p>
+      You need to know two things:
+      <ol>
+        <li>I enjoy learning.</li>
+        <li> I'm like a cat on it's fifth life.</li>
+      </ol>
+      That's why I became interested in software development. You just keep
+      learning!
+    </p>
+    <p>
+      <ul>
+        <li>
+          Some of my interests are listed <a href="about">here.</a>
+        </li>
+        <li>
+          Biased reviews by people I know, can be found{" "}
+          <a href="reviews"> here.</a>
+        </li>
+      </ul>
+    </p>
     <ul>
-      <li> The Posh Peasant </li>
-      <li> I've Bean Writing </li>
+      <li>Resume</li>
     </ul>
-  </p>
+  </>
 );
 
-export { ProgrammingInfo, ArtInfo, PodcastInfo, Blog };
+export { ProgrammingInfo, Content, About };

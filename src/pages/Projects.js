@@ -5,7 +5,9 @@ export default function RecentProjects() {
   const [projects, setProjects] = useState([{}]);
 
   useEffect(() => {
-    fetch("https://api.github.com/users/knayad/repos")
+    fetch(
+      "https://api.github.com/users/knayad/repos?sort=created&direction=desc"
+    )
       .then((response) => response.json())
       .then((data) => {
         setProjects(data);

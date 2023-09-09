@@ -2,6 +2,17 @@
   font-family: "Bungee Spice", cursive;
 }
 
+.nav {
+  background-color: rgb(255, 255, 255, 0.75);
+}
+
+.reviews {
+  background: rgb(255, 235, 205, 0.75) /*  10% opaque background only */;
+  padding: 0.8em;
+  align-items: center;
+  text-align: justify;
+}
+
 .projects {
   font-family: "Merriweather", serif;
   flex-wrap: wrap;
@@ -33,9 +44,4 @@
 
 .about {
   text-align: left;
-}
-
-.reviews {
-  align-items: center;
-  text-align: justify;
 }

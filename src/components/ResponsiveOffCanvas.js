@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import Nav from "react-bootstrap/Nav";
+import CollapsedAccordion from "./Accordion";
 
 function ResponsiveOffCanvas() {
   const [show, setShow] = useState(false);
@@ -11,19 +12,14 @@ function ResponsiveOffCanvas() {
   return (
     <>
       <Nav.Link href="#link" onClick={handleShow}>
-        Off Canvas
+        Explore
       </Nav.Link>
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Responsive offcanvas</Offcanvas.Title>
+          <Offcanvas.Title>Explore</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <p className="mb-0">This is content.</p>
-          <br />
-          <br />
-          <p className="mb-0">This is for Renato:</p>
-          <br />
-          <small>peek a boo</small>
+          <CollapsedAccordion />
         </Offcanvas.Body>
       </Offcanvas>
     </>
