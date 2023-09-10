@@ -2,7 +2,6 @@ import { Container, Row } from "react-bootstrap";
 
 const ReviewList = (props) => {
   const reviews = props.reviews;
-  // console.log(props, reviews);
 
   return (
     <Container className="review-list">

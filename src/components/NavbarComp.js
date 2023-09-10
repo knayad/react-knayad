@@ -26,11 +26,9 @@ class NavbarComp extends Component {
                 <Nav.Link href="resume">Resume</Nav.Link>
                 <Nav.Link href="projects">Projects</Nav.Link>
                 <NavDropdown title="More" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="about">About Me</NavDropdown.Item>
+                  <NavDropdown.Item href="about">About</NavDropdown.Item>
                   <NavDropdown.Item href="reviews">Reviews</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">
-                    Something
-                  </NavDropdown.Item>
+                  <NavDropdown.Item href="contact">Contact</NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="https://knayad.github.io/nadia.github.io/">
                     OG website (Outdated)

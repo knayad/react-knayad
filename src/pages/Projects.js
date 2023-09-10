@@ -1,23 +1,17 @@
-import { useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import useFetch from "../hooks/useFetch";
 
 export default function RecentProjects() {
-  const [projects, setProjects] = useState([{}]);
-
-  useEffect(() => {
-    fetch(
-      "https://api.github.com/users/knayad/repos?sort=created&direction=desc"
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        setProjects(data);
-      });
-  }, []);
+  const { data: projects } = useFetch(
+    "https://api.github.com/users/knayad/repos?sort=created&direction=desc&page=1&per_page=6"
+  );
 
   return (
     <Container className="projects">
       <Row>
-        <h2>This page uses GitHub's API to pull my repositories. </h2>{" "}
+        <h2>
+          This page uses GitHub's API to pull recently created repositories.{" "}
+        </h2>{" "}
       </Row>
       <br />
       <br />

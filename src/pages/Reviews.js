@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import useFetch from "../hooks/useFetch";
+
 import Star from "../assets/images/svg/bright-yellowstar-svgrepo-com.svg";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
@@ -9,19 +10,11 @@ import { Col, Row } from "react-bootstrap";
 import ReviewList from "../components/ReviewList";
 
 const Reviews = () => {
-  const [reviews, setReviews] = useState(null);
-
-  useEffect(() => {
-    fetch("http://localhost:8000/reviews")
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        // console.log(data);
-        setReviews(data);
-      });
-  }, []);
-
+  const {
+    data: reviews,
+    error,
+    pending,
+  } = useFetch("http://localhost:8000/reviews");
   return (
     <>
       <Container>
@@ -34,6 +27,20 @@ const Reviews = () => {
         <br />
         <br />
         <Container className="reviews">
+          {pending && (
+            <Container>
+              <br />
+              <h2> Loading... </h2>
+              <br />
+            </Container>
+          )}
+          {error && (
+            <Container>
+              <br />
+              <h2> {error} </h2>
+              <br />
+            </Container>
+          )}
           <Col md={8}>{reviews && <ReviewList reviews={reviews} />}</Col>
         </Container>
       </Container>

@@ -5,7 +5,7 @@ const ProgrammingInfo = (
     <ul>
       <li>
         {" "}
-        <a href="recent"> Recent projects</a>{" "}
+        <a href="projects"> Recent projects</a>{" "}
         <p>utilizes Github's API to pull repositories</p>
       </li>
       <li>
@@ -61,11 +61,10 @@ const About = (
           Biased reviews by people I know, can be found{" "}
           <a href="reviews"> here.</a>
         </li>
+        <li>Resume</li>
+        <li>Contact</li>
       </ul>
     </p>
-    <ul>
-      <li>Resume</li>
-    </ul>
   </>
 );
 

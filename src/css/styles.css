@@ -2,12 +2,28 @@
   font-family: "Bungee Spice", cursive;
 }
 
+/* .landing-page-col:nth-child(odd) {
+  background-color: rgb(255, 235, 205, 0.75);
+  text-align: center;
+  word-wrap: break-word;
+  padding: 1em;
+  border-radius: 25px;
+} */
+
+.landing-page-col:nth-child(even) {
+  background-color: rgb(255, 245, 238, 0.75);
+  text-align: center;
+  word-wrap: break-word;
+  padding: 1em;
+  border-radius: 45px;
+}
+
 .nav {
   background-color: rgb(255, 255, 255, 0.75);
 }
 
 .reviews {
-  background: rgb(255, 235, 205, 0.75) /*  10% opaque background only */;
+  background: rgb(255, 235, 205, 0.75) /*  75% opaque background only */;
   padding: 0.8em;
   align-items: center;
   text-align: justify;
@@ -22,26 +38,39 @@
   font-size: x-large;
 }
 .project-row:nth-child(odd) {
-  background-color: blanchedalmond;
-  opacity: 0.75;
+  background-color: rgb(255, 235, 205, 0.75);
   text-align: center;
   word-wrap: break-word;
   padding: 1em;
 }
 
 .project-row:nth-child(even) {
-  background-color: seashell;
+  background-color: rgb(255, 245, 238, 0.75);
   text-align: center;
   word-wrap: break-word;
   padding: 1em;
 }
 
 .projects h2 {
-  background-color: rgb(190, 227, 215);
+  background-color: rgb(190, 227, 215, 0.85);
   padding: 1em;
-  opacity: 0.85;
+  border-radius: 55px;
 }
 
 .about {
   text-align: left;
+}
+
+.spline-avatar {
+  /* border: 2px solid red; */
+  padding: 10px;
+  background: transparent;
+  border-radius: 25px;
+  background: linear-gradient(orange, white);
+}
+
+#heart {
+  border-radius: 4px;
+  padding: 2px;
+  width: 50px;
 }
