@@ -7,15 +7,22 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 //components
 import NavbarComp from "./components/NavbarComp";
 // import ModalComponent from "./components/ModalComponent";
-// import MySpline from "./components/MySpline";
+// import Particles from "particlesjs";
 
 //pages
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Reviews from "./pages/Reviews";
+import Footer from "./components/Footer";
 
 function App() {
+  // var particles = Particles.init({
+  //   selector: ".background",
+  //   color: ["#020024", "#da3312", "#217921"],
+  //   connectParticles: true,
+  //   speed: 0.5,
+  // });
   return (
     <div className="App">
       <NavbarComp />
@@ -33,6 +40,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       {/* <ModalComponent /> */}
+      <Footer />
     </div>
   );
 }

@@ -6,7 +6,7 @@ import { ProgrammingInfo, Content, About } from "../text/accordionInfo";
 
 function CollapsedAccordion() {
   return (
-    <Accordion>
+    <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
         <Accordion.Header>
           <Nav.Link href="about">About Me</Nav.Link>
