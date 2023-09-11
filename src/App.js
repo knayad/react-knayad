@@ -15,6 +15,7 @@ import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Reviews from "./pages/Reviews";
 import Footer from "./components/Footer";
+import NotFound from "./pages/NotFound";
 
 function App() {
   // var particles = Particles.init({
@@ -33,6 +34,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/reviews" element={<Reviews />} />
+          <Route path="*" element={<NotFound />} />
           {/* 
           <body>
             <br />
@@ -40,7 +42,9 @@ function App() {
         </Routes>
       </BrowserRouter>
       {/* <ModalComponent /> */}
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

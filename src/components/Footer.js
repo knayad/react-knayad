@@ -8,6 +8,7 @@ class Footer extends Component {
   render() {
     return (
       <Container>
+        <br />
         <Row>
           <small>
             Explore my website!

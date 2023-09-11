@@ -22,13 +22,6 @@
   background-color: rgb(255, 255, 255, 0.75);
 }
 
-.reviews {
-  background: rgb(255, 235, 205, 0.75) /*  75% opaque background only */;
-  padding: 0.8em;
-  align-items: center;
-  text-align: justify;
-}
-
 .projects {
   font-family: "Merriweather", serif;
   flex-wrap: wrap;
@@ -57,10 +50,56 @@
   border-radius: 55px;
 }
 
+/* reviews */
+.reviews {
+  background: rgb(255, 235, 205, 0.75) /*  75% opaque background only */;
+  padding: 2em;
+  align-items: center;
+  text-align: justify;
+  border-radius: 55px;
+}
+.create-review {
+  align-items: center;
+  text-align: center;
+  background-color: rgb(190, 227, 215, 0.85);
+  border-radius: 55px;
+}
+.create-review label {
+  text-align: left;
+  display: block;
+}
+
+.create-review input,
+.create-review textarea {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+  border-radius: 10px;
+}
+
+.create-review button {
+  background: orange;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* end reviews  */
+
 .about {
   text-align: left;
 }
 
+.not-found h2 {
+  background-color: rgb(190, 227, 215, 0.85);
+  padding: 1em;
+  border-radius: 55px;
+}
 .spline-avatar {
   /* border: 2px solid red; */
   padding: 10px;
@@ -73,4 +112,10 @@
   border-radius: 4px;
   padding: 2px;
   width: 50px;
+}
+
+#monster {
+  border-radius: 4px;
+  padding: 2px;
+  width: 450px;
 }
