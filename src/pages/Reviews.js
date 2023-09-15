@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import { Col } from "react-bootstrap";
 import ReviewList from "../components/ReviewList";
 import CreateReview from "../components/CreateReview";
+import Typewriter from "../components/TypeWritter";
 
 const Reviews = () => {
   const {
@@ -15,7 +16,9 @@ const Reviews = () => {
   return (
     <>
       <Container>
-        <h1>Reviews</h1>
+        <h1>
+          <Typewriter text="Reviews" delay={100} />
+        </h1>
         <img src={Star} alt="star" style={{ height: 55, width: 55 }} />
         <img src={Star} alt="star" style={{ height: 55, width: 55 }} />
         <img src={Star} alt="star" style={{ height: 55, width: 55 }} />

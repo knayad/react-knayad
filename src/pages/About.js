@@ -2,13 +2,14 @@ import Container from "react-bootstrap/Container";
 import { Button } from "react-bootstrap";
 
 import { useEffect, useState } from "react";
+import Typewriter from "../components/TypeWritter";
 
 const About = () => {
   const [joke, setJoke] = useState(false);
 
   useEffect(() => {
     function simulateNetworkRequest() {
-      return new Promise((resolve) => setTimeout(resolve, 6500));
+      return new Promise((resolve) => setTimeout(resolve, 5500));
     }
 
     if (joke) {
@@ -22,13 +23,33 @@ const About = () => {
 
   return (
     <Container>
-      {/* <br />
-      <h1 className="welcome"> My name is Nadia</h1>
-      <br /> */}
-      <h1> About Me</h1>
+      <h1>
+        <Typewriter text="About Me" delay={200} />
+      </h1>
       <Container className="about">
+        <br />
+        <p id="summary">
+          <h5> What I think: </h5> I'm great at situational humor, listening,
+          and making coffee. I've working in hospitality, finance, education,
+          and non-profits. I enjoy learning, traveling, and eating. Basically, I
+          hope to one day become a hyperpolyglot so I can enjoy food and
+          conversations around the world.
+          <br />
+          <br />
+          <h5>What friends think:</h5>
+          To see what people have to say about me,{" "}
+          <a href="reviews">click here!</a>
+          <br />
+          <br />
+          <h5> What strangers think: </h5>I usually get hit with a sense of
+          disbelief when I tell people that I'm an introvert. I once mentioned
+          it to a colleague and he exclaimed,
+          <i>"But you have such a great personality!"</i>I had no idea those
+          were supposed to be mutually exclusive, but I suppose it helps
+          extroverts to know I'm the "social-kind" of introvert.
+        </p>
+        <br />
         <p> Here's a list of some of my interests!</p>
-
         <ul>
           <li>
             <b>Coffee:</b>{" "}

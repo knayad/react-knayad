@@ -12,10 +12,13 @@ import NavbarComp from "./components/NavbarComp";
 //pages
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
+import Repositories from "./pages/Repositories";
 import About from "./pages/About";
 import Reviews from "./pages/Reviews";
 import Footer from "./components/Footer";
 import NotFound from "./pages/NotFound";
+import Spline from "./pages/Spline";
+import Contact from "./pages/Contact";
 
 function App() {
   // var particles = Particles.init({
@@ -32,8 +35,11 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/repositories" element={<Repositories />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/reviews" element={<Reviews />} />
+          <Route path="/spline" element={<Spline />} />
           <Route path="*" element={<NotFound />} />
           {/* 
           <body>

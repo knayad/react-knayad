@@ -2,6 +2,10 @@
   font-family: "Bungee Spice", cursive;
 }
 
+#my-name {
+  font-family: "Dawning of a New Day", cursive;
+  font-size: 100px;
+}
 /* .landing-page-col:nth-child(odd) {
   background-color: rgb(255, 235, 205, 0.75);
   text-align: center;
@@ -95,7 +99,16 @@
   text-align: left;
 }
 
-.not-found h2 {
+#summary {
+  background-color: rgb(190, 227, 215, 0.5);
+  padding: 2em;
+  border-radius: 55px;
+}
+#summary h5 {
+  text-decoration-line: underline;
+}
+
+.not-found {
   background-color: rgb(190, 227, 215, 0.85);
   padding: 1em;
   border-radius: 55px;

@@ -21,6 +21,11 @@ const ProgrammingInfo = (
         <a href="home"> The website you're on</a>{" "}
         <p>react.js, html, css and javascript</p>
       </li>
+      <li>
+        {" "}
+        <a href="spline"> 3D avatar using Spline </a>{" "}
+        <p>Spline is a 3D design tool </p>
+      </li>
     </ul>
   </p>
 );

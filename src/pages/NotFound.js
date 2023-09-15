@@ -8,8 +8,11 @@ const NotFound = () => {
     <Container className="not-found">
       <Col>
         <br />
+        <h1>Whomp, whomp.</h1>
         <h2> This page cannot be found.</h2>
+        <br />
         <Link to="/home"> Back to Home</Link>
+        <br />
         <br />
         <br />
       </Col>

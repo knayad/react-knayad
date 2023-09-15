@@ -9,7 +9,7 @@ export default function MySpline() {
       <Suspense
         fallback={
           <Container>
-            <h2>Loading...</h2>
+            <h3> This may take a several moments to load... </h3>
           </Container>
         }
       >
