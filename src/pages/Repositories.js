@@ -1,6 +1,8 @@
 import { Col, Container, Row } from "react-bootstrap";
 import useFetch from "../hooks/useFetch";
 
+import TypeWriter from "../components/TypeWriter";
+
 export default function Repositories() {
   const { data: projects } = useFetch(
     "https://api.github.com/users/knayad/repos?sort=created&direction=desc&page=1&per_page=6"
@@ -8,9 +10,14 @@ export default function Repositories() {
 
   return (
     <Container className="projects">
+      <h1 className="welcome" id="typeEffect">
+        <TypeWriter text="Repositories" delay={150} />
+      </h1>
+      <br />
       <Row>
         <h2>
-          This page uses GitHub's API to pull recently created repositories.{" "}
+          This page uses GitHub's API to pull some recently created
+          repositories.{" "}
         </h2>{" "}
       </Row>
       <br />

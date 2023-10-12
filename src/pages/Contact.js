@@ -1,17 +1,14 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 
-import Typewriter from "../components/TypeWritter";
-
-import PDFReader from "../components/PDFReader";
+import TypeWriter from "../components/TypeWriter";
 
 const Contact = () => {
   return (
     <Container>
-      <h1>
-        <Typewriter text="Contact Me" delay={200} />
+      <h1 className="welcome" id="typeEffect">
+        <TypeWriter text="Contact Me" delay={150} />
       </h1>
-      <PDFReader />
     </Container>
   );
 };

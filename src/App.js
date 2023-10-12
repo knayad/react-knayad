@@ -19,6 +19,7 @@ import Footer from "./components/Footer";
 import NotFound from "./pages/NotFound";
 import Spline from "./pages/Spline";
 import Contact from "./pages/Contact";
+import HireMe from "./pages/HireMe";
 
 function App() {
   // var particles = Particles.init({
@@ -38,6 +39,7 @@ function App() {
           <Route path="/repositories" element={<Repositories />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/hire" element={<HireMe />} />
           <Route path="/reviews" element={<Reviews />} />
           <Route path="/spline" element={<Spline />} />
           <Route path="*" element={<NotFound />} />

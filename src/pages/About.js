@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import { Button } from "react-bootstrap";
 
 import { useEffect, useState } from "react";
-import Typewriter from "../components/TypeWritter";
+import Typewriter from "../components/TypeWriter";
 
 const About = () => {
   const [joke, setJoke] = useState(false);
@@ -23,7 +23,7 @@ const About = () => {
 
   return (
     <Container>
-      <h1>
+      <h1 className="welcome" id="typeEffect">
         <Typewriter text="About Me" delay={200} />
       </h1>
       <Container className="about">
@@ -45,8 +45,8 @@ const About = () => {
           disbelief when I tell people that I'm an introvert. I once mentioned
           it to a colleague and he exclaimed,
           <i>"But you have such a great personality!"</i>I had no idea those
-          were supposed to be mutually exclusive, but I suppose it helps
-          extroverts to know I'm the "social-kind" of introvert.
+          were mutually exclusive, but I suppose it helps extroverts to know I'm
+          the "social-kind" of introvert.
         </p>
         <br />
         <p> Here's a list of some of my interests!</p>
