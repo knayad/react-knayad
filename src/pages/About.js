@@ -1,8 +1,10 @@
 import Container from "react-bootstrap/Container";
-import { Button } from "react-bootstrap";
+import { Button, Col } from "react-bootstrap";
 
 import { useEffect, useState } from "react";
 import Typewriter from "../components/TypeWriter";
+
+import skull from "../assets/skull.png";
 
 const About = () => {
   const [joke, setJoke] = useState(false);
@@ -26,9 +28,11 @@ const About = () => {
       <h1 className="welcome" id="typeEffect">
         <Typewriter text="About Me" delay={200} />
       </h1>
-      <Container className="about">
+      <br />
+      <br />
+      <Col md={{ span: 7, offset: 5 }} className="landing-page-col">
         <br />
-        <p id="summary">
+        <p>
           <h5> What I think: </h5> I'm great at situational humor, listening,
           and making coffee. I've working in hospitality, finance, education,
           and non-profits. I enjoy learning, traveling, and eating. Basically, I
@@ -48,21 +52,38 @@ const About = () => {
           were mutually exclusive, but I suppose it helps extroverts to know I'm
           the "social-kind" of introvert.
         </p>
-        <br />
+      </Col>
+      <Container className="about">
         <p> Here's a list of some of my interests!</p>
         <ul>
           <li>
             <b>Coffee:</b>{" "}
             <p>
-              I better know how to make a decent cup of coffee. I worked in
-              -industry for almost a decade.{" "}
+              I better know how to make a decent cup of coffee. I worked in the
+              industry for almost a decade.{" "}
+            </p>
+          </li>
+          <li>
+            <b>Coding: </b>
+            <p>Q: What do cats and programmers have in common?</p>
+            <p>
+              A:{" "}
+              <Button
+                variant="primary"
+                disabled={joke}
+                onClick={!joke ? handleClick : null}
+              >
+                {joke
+                  ? "When either one is unusually happy and excited, it is because they found a bug."
+                  : "Click to see the answer"}
+              </Button>
             </p>
           </li>
           <li>
             <b>Reading:</b>{" "}
             <p>
               {" "}
-              I'm especially drawn books by (credible) doctors who explore the
+              I'm especially drawn books by credible doctors who explore the
               biology and psychology of people.{" "}
             </p>
           </li>
@@ -103,23 +124,8 @@ const About = () => {
             <b>Hiking: </b>
             <p>Especially with friends!</p>
           </li>
-          <li>
-            <b>Coding: </b>
-            <p>Q: What do cats and programmers have in common?</p>
-            <p>
-              A:{" "}
-              <Button
-                variant="primary"
-                disabled={joke}
-                onClick={!joke ? handleClick : null}
-              >
-                {joke
-                  ? "When either one is unusually happy and excited, it is because they found a bug."
-                  : "Click to see the answer"}
-              </Button>
-            </p>
-          </li>
         </ul>
+        <img alt="Skull with roses" src={skull} />
       </Container>
     </Container>
   );

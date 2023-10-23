@@ -13,7 +13,7 @@ export default function MySpline() {
           </Container>
         }
       >
-        <Spline scene="https://prod.spline.design/lM6xXQskMGcZdgv5/scene.splinecode" />
+        <Spline scene="https://draft.spline.design/JbFXyAU7Gw7obPEY/scene.splinecode" />
       </Suspense>
     </div>
   );
