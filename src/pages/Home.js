@@ -5,7 +5,9 @@ import { Col, Row } from "react-bootstrap";
 
 // import skull from "../assets/skull.png";
 import sup from "../assets/bastrad-sup.png";
+
 import MySpline from "../components/MySpline";
+import TypeWriter from "../components/TypeWriter";
 
 const Home = () => {
   return (
@@ -42,20 +44,25 @@ const Home = () => {
       <br />
       <br />
       <br />
-      {/* <Col md={{ span: 7, offset: 5 }} className="landing-page-col">
-        <Row className="spline-avatar">
-          <h3> Check out the avatar I made using Spline! </h3>
-          <MySpline />
-          <h4> The avatar will follow your mouse movements.</h4>
-          <p> You may also pan by left-clicking, holding, and dragging.</p>
-          <small>
-            {" "}
-            It is not unusual for it to take a long time to load...{" "}
-          </small>
-        </Row>
-      </Col> */}
       <br />
-      <MySpline />
+      <Row>
+        <Col>stuff 1</Col>
+        <Col>stuff 2</Col>
+        <Col>stuff 3</Col>
+      </Row>
+      <Row>
+        <Col>
+          <MySpline />
+          <TypeWriter text="I wonder what the buttons do..." delay={150} />
+          <br />
+          <br />
+        </Col>
+      </Row>
+      <Row>
+        <Col>stuff 7</Col>
+        <Col>stuff 8</Col>
+        <Col>stuff 9</Col>
+      </Row>
     </Container>
   );
 };
