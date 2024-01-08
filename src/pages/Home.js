@@ -7,12 +7,13 @@ import { Col, Row } from "react-bootstrap";
 import sup from "../assets/bastrad-sup.png";
 
 import MySpline from "../components/MySpline";
-import TypeWriter from "../components/TypeWriter";
+// import TypeWriter from "../components/TypeWriter";
 
 const Home = () => {
   return (
     <Container>
       <Row>
+        {/* <TypeWriter text="Welcome" delay={150} /> */}
         <Col className="landing-page-col">
           <Container fluid className="nameTagSize">
             <h3 id="my-name-tag-hello">
@@ -53,7 +54,6 @@ const Home = () => {
       <Row>
         <Col>
           <MySpline />
-          <TypeWriter text="I wonder what the buttons do..." delay={150} />
           <br />
           <br />
         </Col>

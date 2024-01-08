@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Container from "react-bootstrap/Container";
+import ModalComponent from "./ModalComponent";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
@@ -35,7 +36,12 @@ class NavbarComp extends Component {
                 </NavDropdown.Item>
                 <NavDropdown.Item href="reviews">Reviews</NavDropdown.Item>
                 <NavDropdown.Divider />
+                {/* <NavDropdown.Item 
+                href="https://knayad.github.io/nadia.github.io/">
+                  OG website (Outdated)
+                </NavDropdown.Item> */}
                 <NavDropdown.Item href="https://knayad.github.io/nadia.github.io/">
+                  {" "}
                   OG website (Outdated)
                 </NavDropdown.Item>
               </NavDropdown>
