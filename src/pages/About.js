@@ -37,7 +37,9 @@ const About = () => {
       <Row>
         <Col sm={{ span: 1, offset: 0 }}>
           1 - travel 30 <br />
-          <SlickSlider />
+          <SlickSlider>
+            {<img alt="Skull with roses" src={skull} />}
+          </SlickSlider>
         </Col>
         <Col md={{ span: 8, offset: 1 }}>
           2 <br /> about me stuff

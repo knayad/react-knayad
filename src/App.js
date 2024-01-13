@@ -16,7 +16,6 @@ import About from "./pages/About";
 import Reviews from "./pages/Reviews";
 import Footer from "./components/Footer";
 import NotFound from "./pages/NotFound";
-import Contact from "./pages/Contact";
 import HireMe from "./pages/HireMe";
 
 function App() {
@@ -39,7 +38,6 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/repositories" element={<Repositories />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
           <Route path="/hire" element={<HireMe />} />
           <Route path="/reviews" element={<Reviews />} />
           <Route path="*" element={<NotFound />} />

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 
+// import tower from "../assets/images/sliders/travel/eftn.jpg";
+
 export default class AutoPlay extends Component {
   render() {
     const settings = {
@@ -15,12 +17,10 @@ export default class AutoPlay extends Component {
       vertical: true,
     };
     return (
-      <div>
+      <div className="img-List">
         <h2>Auto Play</h2>
         <Slider {...settings}>
-          <div>
-            <h3>1</h3>
-          </div>
+          <div>{/* <img alt="tower" src={tower} /> */}</div>
           <div>
             <h3>2</h3>
           </div>
