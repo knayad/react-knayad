@@ -25,26 +25,8 @@ class NavbarComp extends Component {
             <Nav className="me-auto"></Nav>
             <Nav>
               <ResponsiveOffCanvas />
-              <Nav.Link href={resume} download="Nadia_Ayad">
-                Resume
-              </Nav.Link>
               <Nav.Link href="hire">Hire</Nav.Link>
               <Nav.Link href="about">About</Nav.Link>
-              <NavDropdown title="More" id="basic-nav-dropdown">
-                <NavDropdown.Item href="repositories">
-                  Repositories
-                </NavDropdown.Item>
-                <NavDropdown.Item href="reviews">Reviews</NavDropdown.Item>
-                <NavDropdown.Divider />
-                {/* <NavDropdown.Item 
-                href="https://knayad.github.io/nadia.github.io/">
-                  OG website (Outdated)
-                </NavDropdown.Item> */}
-                <NavDropdown.Item href="https://knayad.github.io/nadia.github.io/">
-                  {" "}
-                  OG website (Outdated)
-                </NavDropdown.Item>
-              </NavDropdown>
             </Nav>
           </Navbar.Collapse>
         </Container>

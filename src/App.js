@@ -11,7 +11,7 @@ import NavbarComp from "./components/NavbarComp";
 
 //pages
 import Home from "./pages/Home";
-import Repositories from "./pages/Repositories";
+import Repositories from "./components/Repositories";
 import About from "./pages/About";
 import Reviews from "./pages/Reviews";
 import Footer from "./components/Footer";
@@ -36,10 +36,10 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/repositories" element={<Repositories />} />
+          {/* <Route path="/repositories" element={<Repositories />} /> */}
           <Route path="/about" element={<About />} />
           <Route path="/hire" element={<HireMe />} />
-          <Route path="/reviews" element={<Reviews />} />
+          {/* <Route path="/reviews" element={<Reviews />} /> */}
           <Route path="*" element={<NotFound />} />
           {/* 
           <body>

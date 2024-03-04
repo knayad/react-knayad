@@ -16,7 +16,7 @@ const Reviews = () => {
   return (
     <>
       <Container>
-        <h1 className="welcome" id="typeEffect">
+        <h1 id="typeEffect">
           <TypeWriter text="Reviews" delay={100} />
         </h1>
         <img src={Star} alt="star" style={{ height: 55, width: 55 }} />
@@ -41,7 +41,7 @@ const Reviews = () => {
               <br />
             </Container>
           )}
-          <Col md={8}>{reviews && <ReviewList reviews={reviews} />}</Col>
+          <Col>{reviews && <ReviewList reviews={reviews} />}</Col>
         </Container>
       </Container>
       <br />

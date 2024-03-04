@@ -1,7 +1,7 @@
 import { Container, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-import monster from "../assets/monster.png";
+import monster from "../assets/pngs/monster.png";
 
 const NotFound = () => {
   return (

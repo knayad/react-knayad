@@ -94,7 +94,7 @@ const CreateReview = () => {
               onChange={(e) => setBody(e.target.value)}
               as="textarea"
               rows={3}
-              placeholder="Required."
+              placeholder="What do you have to say?"
             />
             <Form.Control.Feedback type="invalid">
               Required.

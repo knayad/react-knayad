@@ -4,10 +4,11 @@ import { Button, Row, Col } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import Typewriter from "../components/TypeWriter";
 
-import skull from "../assets/skull.png";
-import SlickSlider from "../components/SlickSlider";
-
+import skull from "../assets/pngs/skull.png";
 import { AboutMeList } from "../text/aboutMeList";
+
+import { Link } from "react-scroll";
+import Reviews from "./Reviews";
 
 const About = () => {
   const [joke, setJoke] = useState(false);
@@ -34,27 +35,38 @@ const About = () => {
       </h1>
       <br />
       <br />
-      <Row>
-        <Col sm={{ span: 1, offset: 0 }}>
-          1 - travel 30 <br />
-          <SlickSlider>
-            {<img alt="Skull with roses" src={skull} />}
-          </SlickSlider>
-        </Col>
-        <Col md={{ span: 8, offset: 1 }}>
-          2 <br /> about me stuff
-          <p id="aboutMeBlurb">
-            Funny random blurb about travel, jokes, food, obsessive learning,
-            and enjoying the company of myself and others.
-          </p>
-          <span>
-            <Button href="travel">TRAVEL</Button>{" "}
-            <Button href="REVIEWS">REVIEWS</Button>
-          </span>
-          <br />
-          <br />
+      <Container>
+        <Row>
+          <Col sm={{ span: 1, offset: 0 }}>
+            {/* 1 - empty left 30 <br /> */}
+          </Col>
+
+          <Col md={{ span: 8, offset: 1 }}>
+            {/* 2 <br /> about me stuff */}
+            <p id="aboutMeBlurb">
+              I love travel, jokes, food, obsessive learning, and enjoying the
+              company of myself and others.
+            </p>
+            <span>
+              <Link
+                to="reviews"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                <Button href="reviews">REVIEWS</Button>{" "}
+              </Link>
+              <Button href="hire">HIRE</Button>
+            </span>
+            <br />
+            <br />
+          </Col>
+        </Row>
+
+        <Col>
           <Row>
-            <Col className="about">
+            <Col lg={{ offset: 1 }} className="about">
               <p> Here's a list of some of my interests!</p>
               <ul>
                 <li>
@@ -85,13 +97,25 @@ const About = () => {
               {AboutMeList}
             </Col>
             <Col>
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
               <img alt="Skull with roses" src={skull} />
             </Col>
           </Row>
         </Col>
-        <Col sm={{ span: 1, offset: 1 }}>
-          3 - friend30 <br />
-          <SlickSlider />
+
+        <Col sm={{ span: 1, offset: 1 }}>{/* 3 - friend30 <br /> */}</Col>
+      </Container>
+      <Row>
+        <Col md={{ span: 9, offset: 1 }}>
+          <section id="reviews">
+            <Reviews />
+          </section>
         </Col>
       </Row>
     </Container>

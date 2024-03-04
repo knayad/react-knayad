@@ -135,7 +135,7 @@
 
 /* reviews */
 .reviews {
-  background: rgb(255, 235, 205, 0.75) /*  75% opaque background only */;
+  background: hsl(216, 98%, 52%, 35%); /*  35% opaque background only */
   padding: 2em;
   align-items: center;
   text-align: justify;
@@ -144,7 +144,7 @@
 .create-review {
   align-items: center;
   text-align: center;
-  background-color: rgb(190, 227, 215, 0.85);
+  background-color: hsl(45, 100%, 51%, 45%);
   border-radius: 55px;
 }
 .create-review label {
@@ -164,7 +164,7 @@
 }
 
 .create-review button {
-  background: orange;
+  background: #3629d2;
   color: #fff;
   border: 0;
   padding: 8px;
@@ -173,10 +173,6 @@
 }
 
 /* end reviews  */
-
-.about {
-  text-align: left;
-}
 
 #summary {
   background-color: rgb(190, 227, 215, 0.5);
@@ -205,8 +201,92 @@
   width: 450px;
 }
 
+/* home page & about page */
 #aboutMeBlurb {
   font-family: "Dawning of a New Day", cursive;
   text-align: center;
   font-size: 50px;
+}
+
+.about {
+  text-align: left;
+}
+
+#aboutSkull {
+}
+
+/* slider
+.slider-images {
+  width: ;
+  object-fit: scale-down;
+  border-radius: 70%;
+  height: fit-content;
+} */
+
+.slide img {
+  width: auto;
+  margin: 0 auto;
+}
+
+.slide {
+  transform: scale(0.2);
+  transition: transform 300ms;
+  opacity: 0.5;
+}
+
+.activeSlide {
+  transform: scale(1.1);
+  transition: transform 300ms;
+  opacity: 1;
+}
+
+.arrow {
+  color: #d22971;
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow svg {
+  transition: color 300ms;
+}
+
+.arrow svg:hover {
+  color: #3629d2;
+}
+
+.next {
+  right: 0%;
+  top: 50%;
+}
+
+.prev {
+  left: 0%;
+  top: 50%;
+}
+
+.skillIconG2P svg {
+  transform: scale(5);
+  color: #29d28a;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.skillIconG2P svg:hover {
+  color: #d22971;
+  opacity: 1;
+}
+
+.skillIconP2G svg {
+  transform: scale(5);
+  color: #d22971;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.skillIconP2G svg:hover {
+  color: #29d28a;
+  opacity: 1;
 }

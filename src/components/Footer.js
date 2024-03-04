@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Row } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 
-import heart from "../assets/heart.png";
+import heart from "../assets/pngs/heart.png";
 
 class Footer extends Component {
   render() {
